@@ -1,0 +1,209 @@
+.container-sub-friends {
+  background-color: rgba(20, 17, 17, 0.37);
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  position: relative;
+  border-radius: 15px;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* text-align: center; */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  gap: 1rem;
+  color: #b3b8cd;
+  cursor: pointer;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  /* flex-direction: row-reverse; */
+}
+.container-sub-friendRequests {
+  background-color: rgba(20, 17, 17, 0.37);
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  border-radius: 15px;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  /* text-align: center; */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  gap: 1rem;
+  color: #b3b8cd;
+  cursor: pointer;
+  /* overflow-y: scroll; */
+}
+.pro {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 13%;
+  left: 85%;
+}
+
+.container-main-friendRequests {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 100%;
+  height: 100%; */
+  /* height: 100%; */
+  row-gap: 10px;
+  position: relative;
+  /* max-height: 50%; */
+  overflow-y: auto;
+  display: grid;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 180px;
+  padding: 1.16%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.container-main-friends {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* height: 100%; */
+  position: relative;
+  /* max-height: 50%; */
+  overflow-y: auto;
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* justify-items: center;
+  align-items: center; */
+  grid-auto-rows: 180px;
+  padding: 1.16%;
+
+  /* grid-gap: 1em; */
+  gap: 10px 5px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.const-send {
+  /* max-height: 10%; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  line-height: 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: #eeeeee;
+}
+.const-send button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: #eeeeee;
+  /* top: 10px; */
+}
+.underline {
+  background-color: #ffd805;
+  width: 100%;
+  height: 2px;
+}
+.contt {
+  /* height: 80vh; */
+  /* height: 80vh; */
+  justify-content: center;
+  padding: 1rem 2rem 1rem 2rem;
+  gap: 1.3rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: minmax(400px, 1800px);
+  grid-template-rows:
+    minmax(15px, 8%) minmax(100px, 55%)
+    minmax(100px, 35%);
+  background-image: radial-gradient(
+    rgba(179, 184, 205, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+}
+.img_contt {
+  width: 80px;
+  position: relative;
+  border-right: 2px solid #2d4059;
+  display: flex;
+  align-items: center;
+}
+.profile-cont {
+  width: 230px;
+  text-align: center;
+  max-width: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 5px;
+}
+.profile-cont p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.top1 {
+  /* margin-top: 0.5rem;
+  margin-right: 0.5rem; */
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+button.primary {
+  z-index: 10;
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #231e39;
+  font-weight: 500;
+  padding: 8px 23px;
+}
+button.primary.ghost {
+  margin-left: 5px;
+  background-color: transparent;
+  color: #02899c;
+}
+
+.profile-name {
+  /* width: fit-content; */
+  margin: 0.5rem;
+  text-align: center;
+  color: #b3b8cd;
+  font-size: 20px;
+  height: fit-content;
+  position: relative;
+  font-size: 1.3rem;
+}
+.cont-element {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.const-form {
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}

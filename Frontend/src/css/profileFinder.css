@@ -1,0 +1,45 @@
+.send-friendr {
+  box-sizing: border-box;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  background-color: transparent;
+  color: #02899c;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  outline: none;
+  padding: 9px 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn-fore {
+  top: -1px;
+  left: -125px;
+  position: absolute;
+  height: 38px;
+  width: 120px;
+  border-radius: 3px;
+  background-color: rgb(29, 26, 26);
+}
+.border-div {
+  position: absolute;
+  border: 1px solid #03bfcb;
+  left: 2px;
+  top: 2px;
+  height: 32px;
+  width: 115px;
+}
+.btn-fore svg {
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.buttonss {
+  left: 5%;
+  top: 10%;
+  position: absolute;
+}

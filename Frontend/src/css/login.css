@@ -1,0 +1,130 @@
+.login-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+.user-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.user-box input {
+  width: 228px;
+  /* padding: 10px 0; */
+  padding-left: 2px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.label {
+  position: absolute;
+  top: 0px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  /* tiransition: 0.5s; */
+}
+.login-button-submit {
+  position: relative;
+  width: 175px;
+  height: 50px;
+  background: linear-gradient(
+    to top right,
+    rgba(247, 205, 70, 0) 0,
+    rgba(247, 205, 70, 0) calc(50% - 1.8px),
+    rgba(255, 196, 0, 0.2) 50%,
+    rgba(247, 205, 70, 0) calc(50% + 1.8px),
+    rgba(247, 205, 70, 0)
+  );
+  border: 1px solid #ffd805;
+  color: #ffd805;
+  transition: all ease 0.3s;
+
+  padding: 10px 20px;
+  outline: none;
+  transition: all 0.05s ease-in;
+  transition: filter 0.15s ease-in-out;
+  cursor: pointer;
+}
+.login-button-submit text {
+  z-index: 10;
+}
+.btn-bckground {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(255, 216, 5, 0.85) 50%
+  );
+  /* font-style: italic; */
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  transition: ease 0.3s;
+}
+.btn-icon {
+  height: 0.7rem;
+  width: 0.7rem;
+  position: absolute;
+  /* top: calc(0rem - 0.7rem);
+  left: calc(0rem - 0.7rem); */
+  top: -6px;
+  left: -6px;
+  transition: 0.2s 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-icon-down {
+  height: 0.7rem;
+  width: 0.7rem;
+  position: absolute;
+  top: 43px;
+  left: 168px;
+  transition: 0.2s 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user-box-underline-off {
+  background-color: grey;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 30px;
+  transition: 0.2s 0.1s ease-in-out;
+}
+.user-box-underline {
+  background-color: #ffd805;
+  height: inherit;
+  width: 0%;
+  transition: 0.5s ease-in-out;
+}
+.warn-message {
+  position: absolute;
+  top: 1.45rem;
+}
+.login-button-submit:hover .btn-icon-down {
+  transform: scale(0);
+}
+.login-button-submit:hover .btn-icon {
+  transform: scale(0);
+}
+.login-button-submit:hover .btn-bckground {
+  background-position: left bottom;
+}
+.login-button-submit:hover {
+  color: black;
+}
+.user-box-input:focus ~ .user-box-underline-off .user-box-underline {
+  width: 100%;
+}
+/* .user-box-input:focus ~ .label {
+  top: -20px;
+  font-size: 12px;
+} */
